@@ -63,3 +63,13 @@ body {
 		height:110px;
 	}
 }
+
+#quotetext{
+	font-size: 150%;
+	margin-right: 50%;
+	margin-left: 35px;
+}
+
+#quotemaker{
+	margin-left:45px;
+}

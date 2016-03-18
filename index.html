@@ -17,8 +17,7 @@
 	<script>
 		var rand;
 		rand = Math.random()*5;
-		rand = Math.round(rand);
-	
+		rand = Math.round(rand);	
 	</script>
 </head>
 <body>
@@ -37,11 +36,36 @@
 			</ul>
 		</div>
 	</div>
-	<br  /><br  /><br  />
+	<br  /><br  />
 	
-	<div id="quotetext">This is text</div>
+	<div id="quotetext"></div><br  />
+	<div id="quotemaker"></div>
 	<script>
-		document.getElementById("quotetext").innerHTML = rand;
+		switch(rand){
+			case 0:
+				document.getElementById("quotetext").innerHTML = "<i>Understand something well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand</i>";
+				document.getElementById("quotemaker").innerHTML = "-Ada Lovelace"
+				break;
+			case 1:
+				document.getElementById("quotetext").innerHTML = "<i>The only way to do great work is to love the work you do</i>";
+				document.getElementById("quotemaker").innerHTML = "-Steve Jobs"
+				break;
+			case 2:
+				document.getElementById("quotetext").innerHTML = "<i>They don't make bugs like Bunny anymore</i>";
+				document.getElementById("quotemaker").innerHTML = "-Olav Mjelde";
+				break;
+			case 3:
+				document.getElementById("quotetext").innerHTML = "<i>Talk is cheap. Show me the code</i>";
+				document.getElementById("quotemaker").innerHTML = "-Linus Torvalds";
+				break;
+			case 4:
+				document.getElementById("quotetext").innerHTML = "<i>Success is a lousy teacher. It seduces smart people into thinking they can't lose</i>";
+				document.getElementById("quotemaker").innerHTML = "-Bill Gates";
+				break;
+			default:
+				document.getElementById("quotetext").innerHTML = "<i>Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its life believing it is stupid.</i>";
+				document.getElementById("quotemaker").innerHTML = "-Albert Einstein"
+		}
 	</script>
 	
 </body>

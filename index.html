@@ -6,18 +6,20 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="mystyle.css" />
 	<style type="text/css">
-		
-		
-	body{
-		background-image: url(circuitree.png);
-		background-repeat: no-repeat;
-		background-position: right top;
-		background-size: 30%;
-		background-attachment: fixed;
-	}
-	}
-	
+		body {
+			background-image: url(circuitree.png);
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-size: 30%;
+			background-attachment: fixed;
+		}
 	</style>
+	<script>
+		var rand;
+		rand = Math.random()*5;
+		rand = Math.round(rand);
+	
+	</script>
 </head>
 <body>
 	<div id="heading">William Gregers Walker</div>	<br	 />
@@ -34,10 +36,13 @@
 				<li><a href="contactpage.html">Contact Me</a></li>
 			</ul>
 		</div>
+	</div>
+	<br  /><br  /><br  />
 	
-	<!--<div id="treediv">
-	<img 	src="circuitree.png";
-			id="yggdrasil"	/>
-	</div></div>-->
+	<div id="quotetext">This is text</div>
+	<script>
+		document.getElementById("quotetext").innerHTML = rand;
+	</script>
+	
 </body>
 </html>
